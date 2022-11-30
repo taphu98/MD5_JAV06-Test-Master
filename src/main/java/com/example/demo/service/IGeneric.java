@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface IGeneric<T> {
     List<T> findAll();
-    Optional<Category> findById(Long id);
+    Optional<T> findById(Long id);
     void deleteById(Long id);
     void save(T t);
 }
